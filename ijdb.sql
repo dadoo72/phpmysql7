@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Creato il: Lug 30, 2022 alle 18:48
+-- Creato il: Ago 02, 2022 alle 10:58
 -- Versione del server: 10.3.34-MariaDB-0ubuntu0.20.04.1
--- Versione PHP: 7.4.3
+-- Versione PHP: 8.1.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -38,9 +38,9 @@ CREATE TABLE `joke` (
 --
 
 INSERT INTO `joke` (`id`, `joketext`, `jokedate`) VALUES
-(1, 'A programmer was found dead in the shower. The instructions read: lather, rinse, repeat.', '2022-07-30'),
+(1, 'A programmer was found dead in the shower. The instructions read: lather, rinse, repeat.', '2021-04-01'),
 (2, '!false - it\'s funny because it\'s true', '2022-07-30'),
-(3, 'A programmer\'s wife tells him to go to the store and \"get a gallon of milk, and if they have eggs, get a dozen.', '2022-07-30');
+(3, 'A programmer\'s wife tells him to go to the store and \"get a gallon of milk, and if they have eggs, get a dozen.\" He returns with 13 gallons of milk.', '2021-04-01');
 
 --
 -- Indici per le tabelle scaricate

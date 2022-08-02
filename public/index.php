@@ -1,19 +1,11 @@
-<?php 
+<?php
 
-try{
-	$pdo = new PDO('mysql:host=localhost;dbname=ijdb;charset=utf8mb4', 'ijdbuser', 'mypassword');
+$title = 'Internet Joke Database';
 
-	$sql ='SELECT `joketext` FROM `joke`';
-  $result = $pdo->query($sql);
+ob_start();
 
-	foreach ($result as $row) {
-  $jokes[] = $row['joketext'];
-}
-}
-catch (PDOException $e){
-	// $output = 'Unable to connect to thedatabase server: '.$e->getMessage();
-	$output = 'Database error: ' . $e->getMessage() . ' in ' .
-  $e->getFile() . ':' . $e->getLine();
-}
+include __DIR__.'/../templates/home.html.php';
 
-include __DIR__ . '/../templates/jokes.html.php';
+$output= ob_get_clean();
+
+include __DIR__.'/../templates/layout.html.php';
