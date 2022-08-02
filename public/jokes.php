@@ -8,7 +8,16 @@ try{
 
 	foreach ($result as $row) {
   $jokes[] = $row['joketext'];
-}
+	}
+	$title= 'Joke list';
+	$output='';
+	foreach ($jokes as $joke){
+		$output .='<blockquote>';
+		$output .='<p>';
+		$output .=$joke;
+		$output .='</p>';
+		$output .='</blockquote>';
+	}
 }
 catch (PDOException $e){
 	// $output = 'Unable to connect to thedatabase server: '.$e->getMessage();
@@ -16,4 +25,4 @@ catch (PDOException $e){
   $e->getFile() . ':' . $e->getLine();
 }
 
-include __DIR__ . '/../templates/jokes.html.php';
+include __DIR__ . '/../templates/layout.html.php';
