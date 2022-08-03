@@ -1,13 +1,12 @@
 <?php
 try{
-  $pdo = new PDO('mysql:host=localhost;dbname=ijdb;charset=utf8mb4', 'ijdbuser', 'mypassword');
+  include __DIR__ . '/../includes/DatabaseConnection.php';
+  include __DIR__ . '/../includes/DatabaseFunctions.php';
 
-$sql = 'DELETE FROM `joke` WHERE `id`=:id';
-$stmt=$pdo->prepare($sql);
-$stmt->bindValue(':id',$_POST['id']);
-$stmt->execute();
-header('location:jokes.php');
-}
+  deleteJoke($pdo, $_POST['id']);
+  
+  header('location:jokes.php');
+  }
 catch (PDOException $e){
   $title= 'An error has occurred';
 
