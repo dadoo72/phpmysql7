@@ -1,4 +1,5 @@
 <?php
+
 // Include the file that creates the $pdo variable and connects to the database
 include_once __DIR__ . '/../includes/DatabaseConnection.php';
 
