@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Creato il: Ago 03, 2022 alle 13:08
+-- Creato il: Ago 04, 2022 alle 12:08
 -- Versione del server: 10.3.34-MariaDB-0ubuntu0.20.04.1
 -- Versione PHP: 8.1.8
 
@@ -81,9 +81,9 @@ CREATE TABLE `joke` (
 --
 
 INSERT INTO `joke` (`id`, `joketext`, `jokedate`, `authorid`) VALUES
-(1, 'A programmer was found dead in the shower. The instructions read: lather, rinse, repeat.', '2021-04-01', 0),
-(2, '!false - it\'s funny because it\'s true', '2022-07-30', 0),
-(3, 'A programmer\'s wife tells him to go to the store and \"get a gallon of milk, and if they have eggs, get a dozen.\" He returns with 13 gallons of milk.', '2021-04-01', 0),
+(1, 'A programmer was found dead in the shower. The instructions read: lather, rinse, repeat.', '2021-04-01', 1),
+(2, '!false - it\'s funny because it\'s true', '2022-07-30', 1),
+(3, 'A programmer\'s wife tells him to go to the store and \"get a gallon of milk, and if they have eggs, get a dozen.\" He returns with 13 gallons of milk.', '2021-04-01', 1),
 (4, 'How many programmers does it take to screw in a lightbulb? None. It\'s a hardware problem.', '2022-08-02', 1),
 (5, 'Why was the empty array stuck outside? It didn\'t have any keys', '2022-08-02', 2),
 (6, 'Why did the programmer quit his job? He didn\'t get arrays', '2022-08-02', 1);
